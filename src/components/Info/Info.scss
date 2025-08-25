@@ -1,0 +1,163 @@
+@use "@/app/styles/global/variables" as vars;
+@use "@/app/styles/global/mixins" as *;
+
+.info {
+  margin: 0 0 128px;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__title {
+    font-size: 40px;
+    line-height: 52px;
+    font-weight: 700;
+    margin: 0 0 32px;
+    text-align: center;
+
+    @include vp-767 {
+      font-size: 30px;
+      line-height: 42px;
+    }
+
+    @media (max-width: 500px) {
+      font-size: 25px;
+      line-height: 32px;
+    }
+
+    &--colored {
+      background: linear-gradient(
+        90deg,
+        vars.$color-title-grad-l,
+        vars.$color-title-grad-r
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      color: transparent;
+    }
+  }
+
+  &__desc {
+    color: vars.$color-neutral-300;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: center;
+    margin: 0 auto 28px;
+    max-width: 816px;
+  }
+
+  &__content {
+    display: flex;
+    gap: 30px;
+
+    @include vp-1023 {
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    position: relative;
+
+    &:not(:last-child)::before {
+      content: "";
+      border-left: 2px dashed vars.$color-primary-blue-200;
+      height: 100%;
+      width: 1px;
+      position: absolute;
+      top: 10%;
+      left: 5%;
+      z-index: -1;
+
+      @media (max-width: 630px) {
+        left: -32px;
+      }
+    }
+
+    &-title {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    &-number {
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      background: linear-gradient(
+        to right,
+        vars.$color-button-right-grad,
+        vars.$color-button-left-grad
+      );
+      font-size: 32px;
+      line-height: 32px;
+      font-weight: 700;
+      color: vars.$color-neutral-0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      @media (max-width: 630px) {
+        width: 42px;
+        height: 42px;
+        font-size: 22px;
+        line-height: 22px;
+        position: absolute;
+        left: -52px;
+      }
+    }
+
+    &-text {
+      font-size: 32px;
+      line-height: 40px;
+      font-weight: 700;
+      color: vars.$color-neutral-900;
+      margin: 0;
+
+      @media (max-width: 630px) {
+        font-size: 22px;
+        line-height: 30px;
+      }
+    }
+
+    &-desc {
+      font-size: 14px;
+      line-height: 24px;
+      font-weight: 600;
+      color: vars.$color-neutral-500;
+      padding: 0 0 0 72px;
+      margin: 0;
+      max-width: 404px;
+
+      @media (max-width: 630px) {
+        padding: 0;
+      }
+    }
+  }
+
+  &__img {
+    height: 213px;
+    align-self: flex-end;
+    margin-bottom: 74px;
+    border-radius: 24px;
+
+    @include vp-1023 {
+      align-self: center;
+      margin-bottom: 0;
+      height: auto;
+    }
+  }
+}

@@ -1,0 +1,72 @@
+@use "@/app/styles/global/variables" as vars;
+@use "@/app/styles/global/mixins" as *;
+
+.testimonial-card {
+  background: radial-gradient(circle at center, #ebf8ff 2%, #fdfeff 50%);
+  border: 2px solid vars.$color-primary-blue-200;
+  border-radius: 20px;
+  padding: 38px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  height: 100%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+  @media (max-width: 490px) {
+    // flex-direction: column;
+  }
+
+  @media (max-width: 1000px) {
+    padding: 20px;
+  }
+
+  &__picture {
+    width: 76px;
+    height: 76px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    color: vars.$color-neutral-0;
+    font-weight: 700;
+    font-size: 24px;
+
+    @media (max-width: 490px) {
+      width: 56px;
+      height: 56px;
+      font-size: 20px;
+    }
+
+    &--blue {
+      background-color: vars.$color-blue;
+    }
+
+    &--steelblue {
+      background-color: vars.$color-steelblue;
+    }
+
+    &--darkslategray {
+      background-color: vars.$color-darkslategray;
+    }
+
+    &--primary-blue {
+      background-color: vars.$color-primary-blue-700;
+    }
+  }
+
+  &__text {
+    margin: 0;
+    font-size: 16px;
+    line-height: 24px;
+    color: vars.$color-neutral-500;
+
+    @media (max-width: 490px) {
+      font-size: 14px;
+    }
+
+    @media (max-width: 390px) {
+      font-size: 12px;
+    }
+  }
+}

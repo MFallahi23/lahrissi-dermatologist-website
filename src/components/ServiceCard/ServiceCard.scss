@@ -1,0 +1,65 @@
+@use "@/app/styles/global/variables" as vars;
+@use "@/app/styles/global/mixins" as *;
+
+.service-card {
+  background-color: vars.$color-neutral-0;
+  border: 2px solid vars.$color-primary-blue-300;
+  padding: 40px 40px 48px;
+  border-radius: 24px;
+
+  @media (max-width: 500px) {
+    padding: 30px 30px 38px;
+  }
+
+  &--xl {
+    grid-column: 5 span;
+  }
+
+  &--l {
+    grid-column: 4 span;
+  }
+
+  &--m {
+    grid-column: 3 span;
+  }
+
+  @media (max-width: 1000px) {
+    &--xl,
+    &--l,
+    &--m {
+      grid-column: auto;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  &__icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 8px;
+    background-color: vars.$color-primary-blue-50;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__title {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 20px;
+    color: vars.$color-primary-blue-700;
+    margin: 0;
+  }
+
+  &__text {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 24px;
+    color: vars.$color-neutral-500;
+    margin: 0;
+  }
+}

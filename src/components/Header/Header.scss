@@ -1,0 +1,78 @@
+@use "@/app/styles/global/variables" as vars;
+@use "@/app/styles/global/mixins" as *;
+
+.header {
+  &__top {
+    background-color: vars.$color-primary-blue-500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__contact {
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include vp-767 {
+      flex-direction: column;
+    }
+  }
+  &__wrapper {
+    padding: 22px 0 44px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    font-family: vars.$ff-secondary;
+    font-size: 28px;
+    color: vars.$color-primary-blue-700;
+
+    @include vp-767 {
+      font-size: 20px;
+    }
+
+    @media (max-width: 400px) {
+      font-size: 16px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+    @media (max-width: 1200px) {
+      gap: 20px;
+    }
+
+    @include vp-1023 {
+      display: none;
+    }
+  }
+
+  &__link {
+    font-size: 16px;
+    color: vars.$color-neutral-900;
+    line-height: 24px;
+    transition: color vars.$transition-100;
+
+    &:hover {
+      color: vars.$color-primary-blue-700;
+    }
+  }
+
+  &__btn {
+    min-width: 193px;
+
+    @include vp-767 {
+      min-width: auto;
+    }
+  }
+}

@@ -1,0 +1,102 @@
+@use "@/app/styles/global/variables" as vars;
+@use "@/app/styles/global/mixins" as *;
+
+.appointment {
+  margin: 0 0 128px;
+
+  @media (max-width: 400px) {
+    background: radial-gradient(
+      circle at top left,
+      vars.$color-neutral-0 0%,
+      vars.$color-appointment-grad-r 100%
+    );
+  }
+
+  &__card {
+    position: relative;
+    background: radial-gradient(
+      circle at top left,
+      vars.$color-neutral-0 0%,
+      vars.$color-appointment-grad-r 100%
+    );
+    border: 1px solid vars.$color-primary-blue-500;
+    border-radius: 28px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    @media (max-width: 600px) {
+      gap: 30px;
+      padding: 20px;
+    }
+
+    @media (max-width: 400px) {
+      padding: 0;
+      border: none;
+    }
+
+    &-title {
+      font-size: 32px;
+      font-weight: 700;
+      color: vars.$color-primary-blue-700;
+      line-height: 40px;
+      margin: 0;
+
+      @include vp-767 {
+        font-size: 28px;
+        line-height: 32px;
+        text-align: center;
+      }
+
+      @media (max-width: 600px) {
+        font-size: 22px;
+        line-height: 28px;
+      }
+    }
+  }
+
+  &__form {
+    display: flex;
+    gap: 40px;
+    align-items: flex-end;
+    width: 100%;
+
+    @media (max-width: 1140px) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__inputs {
+    display: grid;
+    gap: 40px;
+    align-items: center;
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+
+    @media (max-width: 600px) {
+      gap: 20px;
+    }
+  }
+
+  &__deco {
+    position: absolute;
+    bottom: -35px;
+    left: -19px;
+    z-index: -1;
+
+    @media (max-width: 400px) {
+      display: none;
+    }
+  }
+
+  &__btn {
+    height: 60px;
+    font-size: 16px;
+
+    @media (max-width: 600px) {
+      width: 100%;
+    }
+  }
+}

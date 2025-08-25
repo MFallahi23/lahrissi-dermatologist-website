@@ -1,0 +1,62 @@
+// Colors
+$color-white: #ffffff;
+$color-white-smoke: #f2f2f2;
+$color-dim-gray: #737373;
+$color-black: #000000;
+$color-black-russian: #1e222e;
+$color-blue: #1919ef;
+$color-steelblue: #357ab7;
+$color-lavender: #d7e4f1;
+$color-darkslategray: #1a4a6d;
+$color-very-pale-blue: #f2faff;
+$color-dark-liver: #4f4f4f;
+/* Blue */
+$color-primary-blue-50: #eff9ff;
+$color-primary-blue-100: #def1ff;
+$color-primary-blue-200: #b6e6ff;
+$color-primary-blue-300: #75d4ff;
+$color-primary-blue-400: #2cbeff;
+$color-primary-blue-500: #00a4f4;
+$color-primary-blue-600: #0084d4;
+$color-primary-blue-700: #0069ab;
+$color-primary-blue-800: #00598d;
+$color-primary-blue-900: #064a74;
+$color-primary-blue-950: #042f4d;
+$color-primary-blue-extra: #c2ebff;
+/* Neutral */
+$color-neutral-0: #ffffff;
+$color-neutral-50: #f6f6f6;
+$color-neutral-100: #e7e7e7;
+$color-neutral-200: #d1d1d1;
+$color-neutral-300: #b0b0b0;
+$color-neutral-400: #888888;
+$color-neutral-500: #6d6d6d;
+$color-neutral-600: #5d5d5d;
+$color-neutral-700: #4f4f4f;
+$color-neutral-800: #454545;
+$color-neutral-900: #3d3d3d;
+$color-neutral-950: #000000;
+
+$color-button-right-grad: #a7e2ff;
+$color-button-left-grad: #0095de;
+$color-button-bg: #00a4f4;
+
+$color-title-grad-l: #0179b4;
+$color-title-grad-r: #88d8ff;
+
+$color-quote-grad-l: #fbfdff;
+$color-quote-grad-r: #e9f6ff;
+
+$color-appointment-grad-r: #f8fdff;
+
+// Typography
+$ff-main: "Manrope", Arial, Helvetica, sans-serif;
+$ff-secondary: "Clash Display", Arial, Helvetica, sans-serif;
+
+// Viewport
+$vp-tablet: 1023px;
+$vp-mobile: 767px;
+
+// Animation
+$transition-300: ease-in 0.3s;
+$transition-100: ease-in 0.1s;

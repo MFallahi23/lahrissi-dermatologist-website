@@ -1,0 +1,16 @@
+@use "@/app/styles/global/mixins" as *;
+
+.whatsapp-link {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 30;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  svg {
+    width: 40px;
+    height: 40px;
+  }
+}

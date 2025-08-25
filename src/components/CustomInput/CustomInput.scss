@@ -1,0 +1,48 @@
+@use "@/app/styles/global/variables" as vars;
+@use "@/app/styles/global/mixins" as *;
+
+.custom-input {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+
+  &:hover {
+    .custom-input__field {
+      border: 1px solid vars.$color-primary-blue-500;
+    }
+  }
+
+  &__label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    &-text {
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 600;
+      color: vars.$color-neutral-400;
+    }
+  }
+
+  &__field {
+    border: 1px solid vars.$color-neutral-100;
+    border-radius: 12px;
+    padding: 18px;
+    font-size: 16px;
+    line-height: 20px;
+    color: vars.$color-neutral-800;
+
+    &::placeholder {
+      font-size: 16px;
+      line-height: 24px;
+      color: vars.$color-neutral-100;
+    }
+
+    &:focus-visible {
+      outline: none;
+      border: 1px solid vars.$color-primary-blue-500;
+    }
+  }
+}

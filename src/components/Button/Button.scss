@@ -1,0 +1,66 @@
+@use "@/app/styles/global/variables" as vars;
+@use "@/app/styles/global/mixins" as *;
+
+.btn {
+  font-size: 24px;
+  font-weight: bold;
+  color: vars.$color-neutral-0;
+  border-radius: 12px;
+  padding: 16px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  white-space: nowrap;
+
+  @include vp-767 {
+    padding: 12px 18px;
+    font-size: 16px;
+  }
+
+  @media (max-width: 400px) {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  &--gradient {
+    background: linear-gradient(
+      to right,
+      vars.$color-button-right-grad,
+      vars.$color-button-left-grad
+    );
+    transition: opacity vars.$transition-100;
+
+    &:hover,
+    &:focus-visible {
+      outline: none;
+      opacity: 0.6;
+    }
+  }
+
+  &--blue {
+    background-color: vars.$color-button-bg;
+    color: vars.$color-neutral-0;
+    transition: opacity vars.$transition-100;
+
+    &:hover,
+    &:focus-visible {
+      outline: none;
+      opacity: 0.6;
+    }
+  }
+
+  &--white {
+    color: vars.$color-primary-blue-700;
+    background-color: vars.$color-primary-blue-50;
+    transition: opacity vars.$transition-100;
+
+    &:hover,
+    &:focus-visible {
+      outline: none;
+      opacity: 0.6;
+    }
+  }
+}
