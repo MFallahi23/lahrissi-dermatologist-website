@@ -1,7 +1,6 @@
 "use client";
 
 import Check from "/public/icons/check-success.svg";
-import { useState } from "react";
 import Button from "../Button/Button";
 import "./Success.scss";
 
@@ -34,7 +33,7 @@ const Success = ({ visible, onClose }: SuccessProps) => {
           directement.
         </p>
         <Button className="success__btn" type="gradient" onClick={onClose}>
-          J'ai compris
+          J&apos;ai compris
         </Button>
       </div>
     </>
