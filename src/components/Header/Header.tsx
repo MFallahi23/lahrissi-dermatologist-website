@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Button from "../Button/Button";
 import "./Header.scss";
 
@@ -11,15 +12,10 @@ const Header = () => {
       </div>
       <div className="container">
         <div className="header__wrapper">
-          <a className="header__logo" href="/">
+          <Link className="header__logo" href="/">
             Dr. Lahrissi
-          </a>
+          </Link>
           <ul className="header__list">
-            {/* <li className="header__item">
-              <a className="header__link" href="/">
-                Accueil
-              </a>
-            </li> */}
             <li className="header__item">
               <a className="header__link" href="#services">
                 Services

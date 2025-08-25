@@ -98,7 +98,7 @@ const Footer = () => {
                 </a>
               </li>
               <li className="footer__social-item">
-                <a href="/" className="footer__social-link" target="_blank">
+                <a href="#" className="footer__social-link" target="_blank">
                   <FbIcon width={26} height={26} />
                 </a>
               </li>
