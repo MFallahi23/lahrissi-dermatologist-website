@@ -20,50 +20,31 @@ const Footer = () => {
               <h3 className="footer__title">Contact</h3>
               <ul className="footer__list">
                 <li className="footer__item">
-                  <a className="footer__link" href="/">
-                    +212 5XX XXX XXX
+                  <a className="footer__link" href="tel:0666666666">
+                    +212 666 666 666
                   </a>
                 </li>
                 <li className="footer__item">
-                  <a className="footer__link" href="/">
+                  <a
+                    className="footer__link"
+                    href="mailto:mohcinefallahi23@gmail.com"
+                  >
                     dr.lahrissi@cabinet.ma
                   </a>
                 </li>
                 <li className="footer__item">
-                  <a className="footer__link" href="/">
-                    123 Boulevard Mohammed V 20000 Casablanca, Maroc
-                  </a>
+                  123 Boulevard Mohammed V 20000 Casablanca, Maroc
                 </li>
               </ul>
             </div>
             <div className="footer__services">
               <h3 className="footer__title">Services</h3>
               <ul className="footer__list">
-                <li className="footer__item">
-                  <a className="footer__link" href="/">
-                    Consultation dermatologique
-                  </a>
-                </li>
-                <li className="footer__item">
-                  <a className="footer__link" href="/">
-                    Soins esthétiques
-                  </a>
-                </li>
-                <li className="footer__item">
-                  <a className="footer__link" href="/">
-                    Dépistage
-                  </a>
-                </li>
-                <li className="footer__item">
-                  <a className="footer__link" href="/">
-                    Affections capillaires
-                  </a>
-                </li>
-                <li className="footer__item">
-                  <a className="footer__link" href="/">
-                    Prévention
-                  </a>
-                </li>
+                <li className="footer__item">Consultation dermatologique</li>
+                <li className="footer__item">Soins esthétiques</li>
+                <li className="footer__item">Dépistage</li>
+                <li className="footer__item">Affections capillaires</li>
+                <li className="footer__item">Prévention</li>
               </ul>
             </div>
             <div className="footer__schedule">
