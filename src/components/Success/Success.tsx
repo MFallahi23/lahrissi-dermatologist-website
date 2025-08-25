@@ -21,7 +21,7 @@ const Success = ({ visible, onClose }: SuccessProps) => {
         </h2>
         <p>
           Merci pour votre demande. Le docteur recevra votre rendez-vous et vous
-          contactera bientôt pour confirmer l'heure.
+          contactera bientôt pour confirmer l&apos;heure.
         </p>
         <p>
           <strong>Vérifiez votre téléphone :</strong> un message WhatsApp ou un
