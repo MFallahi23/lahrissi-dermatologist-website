@@ -22,7 +22,6 @@ const Appointment = () => {
     const phoneTrimmed = phone.trim();
     const dateTrimmed = appointmentDate.trim();
 
-    // Simple validation
     if (!nameTrimmed || !phoneTrimmed || !dateTrimmed) {
       toast.error("Veuillez remplir tous les champs.");
       return;
@@ -30,7 +29,6 @@ const Appointment = () => {
 
     const cleanedPhone = phoneTrimmed.replace(/[\s()-]/g, "");
 
-    // Regex: optional +212, then 9 digits starting with 6/5/7/...)
     const phoneRegex = /^(?:\+212|0)?[5-7][0-9]{8}$/;
 
     if (!phoneRegex.test(cleanedPhone)) {
@@ -38,7 +36,6 @@ const Appointment = () => {
       return;
     }
 
-    // Date validation (cannot be in the past)
     const appointmentTime = new Date(dateTrimmed);
     const now = new Date();
     if (isNaN(appointmentTime.getTime()) || appointmentTime < now) {

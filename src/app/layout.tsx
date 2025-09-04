@@ -11,6 +11,9 @@ const manropeFont = Manrope({
 export const metadata: Metadata = {
   title: "Dr. Lahrissi",
   description: "Dermatologue à Casablanca",
+  icons: {
+    icon: "/icons/favicon.svg",
+  },
 };
 
 export default function RootLayout({
